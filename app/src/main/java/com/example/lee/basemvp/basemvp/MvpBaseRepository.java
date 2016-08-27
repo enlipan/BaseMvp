@@ -13,7 +13,7 @@ import retrofit2.Callback;
 public class MvpBaseRepository implements MvpRepository {
     private final WeakHashMap<String,Call> callMap = new WeakHashMap<>();
 
-    public void enqueuCall(String key, Call call, Callback callback){
+    public void enqueueCall(String key, Call call, Callback callback){
         call.enqueue(callback);
         callMap.put(key,call);
     }

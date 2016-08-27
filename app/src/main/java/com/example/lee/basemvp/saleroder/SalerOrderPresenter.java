@@ -16,7 +16,7 @@ public class SalerOrderPresenter extends MvpBasePresenter<SalerOderContract.View
 
 
     @Override
-    protected SalerOderContract.Repository createRepository() {
+    public SalerOderContract.Repository createRepository() {
         return null;
     }
 }
